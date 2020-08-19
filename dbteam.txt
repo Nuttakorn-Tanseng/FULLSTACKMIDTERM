@@ -1,0 +1,25 @@
+{
+    "team_id":"fb001",
+    "team_name":"Buriram fc",
+    "team_players":"",
+    "Founded":""
+}
+
+{
+    "team_id":"fb002",
+    "team_name":"Phuket fc",
+    "team_players":"",
+    "Founded":""
+}
+{
+    "team_id":"fb003",
+    "team_name":"Pattani fc",
+    "team_players":"",
+    "Founded":""
+}
+{
+    "team_id":"fb004",
+    "team_name":"Phang-Nga fc",
+    "team_players":"",
+    "Founded":""
+}

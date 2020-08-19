@@ -1,0 +1,32 @@
+<% include ../partials/header %>
+<div class="container">
+<h1>Edit Team : <%=detail.team_name%></h1>
+  <form action="/teamsave" method="POST">
+    <div class="form-group">
+      <label for="">ID</label>
+      <input type="text" class="form-control" value="<%=detail.team_id%>" name="id" id="" aria-describedby="helpId" readonly
+        placeholder="">
+      <small id="helpId" class="form-text text-muted">Help text</small>
+    </div>
+    <div class="form-group">
+      <label for="">Team Name</label>
+      <input type="text" class="form-control" value="<%=detail.team_name%>" name="name" id=""
+        aria-describedby="helpId" placeholder="">
+      <small id="helpId" class="form-text text-muted">Help text</small>
+    </div>
+    <div class="form-group">
+      <label for="">Team Players</label>
+      <input type="text" class="form-control" value="<%=detail.team_players%>" name="players" id="" aria-describedby="helpId"
+        placeholder="">
+      <small id="helpId" class="form-text text-muted">Help text</small>
+    </div>
+    <div class="form-group">
+      <label for="">Founded</label>
+      <input type="text" class="form-control" value="<%=detail.Founded%>" name="founded" id="" aria-describedby="helpId"
+        placeholder="">
+      <small id="helpId" class="form-text text-muted">Help text</small>
+    </div>
+    <button type="submit" class="btn btn-primary">save</button>
+  </form>
+</div>
+<% include ../partials/footer %>

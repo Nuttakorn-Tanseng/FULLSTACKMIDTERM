@@ -1,0 +1,39 @@
+<% include ../partials/header %>
+<div class="container">
+
+    <h1>Football Teams</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Team Players</th>
+                <th>Founded</th>
+                <th>Action  </th>
+                <th><a name="" id="" class="btn btn-primary" href="/addteam" role="button">Add</a></th>
+            </tr>
+        </thead>
+        <tbody>
+            <%team.forEach(function(teamcode){ %>
+            <tr>
+
+                <td scope="row"><a> <%=teamcode.team_id%> </a></td>
+                    <td><%=teamcode.team_name%></td>
+                    <td><%=teamcode.team_players%></td>
+                    <td><%=teamcode.Founded%></td>
+                    
+                    <td><a name="" id="" class="btn btn-primary" href="/teamdetails/<%=teamcode.team_name%>" role="button">View</a>
+                        <a name="" id="" class="btn btn-primary" href="/edit/<%=teamcode.team_name%>" role="button">Edit</a>
+                        <a name="" id="" class="btn btn-primary" href="/delete/<%=teamcode.team_name%>" role="button">Delete</a>
+                    </td>
+                    <td></td>
+                </tr>
+                <%});%>
+            </tbody>
+        </table>
+
+
+   
+</div>
+<% include ../partials/footer %>
